@@ -1,0 +1,12 @@
+version: "3"
+services:
+  nullboard:
+    build: .
+    image: jcurtis4207/nullboard
+    ports: 
+     - 20080:80
+    container_name: nullboard
+networks:
+  default:
+    external:
+      name: docker-network
