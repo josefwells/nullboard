@@ -541,7 +541,7 @@ body.crowded .config:hover {
 
 .config .bulk {
 	margin-right: 20px;
-	padding: 5px 0 10px 22px;
+	padding: 10px 0 0 22px;
 	transition: opacity 400ms;
 }
 
@@ -550,7 +550,6 @@ body.crowded .config:hover {
 	padding: 6px 2px;
 	margin: 6px -2px;
 	border-top: 1px solid #00000028;
-	border-bottom: 1px solid #00000028;
 }
 
 .config .bulk div a {
