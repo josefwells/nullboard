@@ -20,8 +20,9 @@ This was purely a personal decision since I revamped most of the styling anyway,
 ## Installation with Docker-Compose
 To install with Docker-Compose:
  * Clone the Repository
- * Edit the docker-compose.yml file to change the network (if needed) and the published port
+ * Edit the docker-compose.yml file to change the published port and set volume mount location
  * Create and run the container <br /> `docker-compose up -d`
+ * Set volume permissions <br /> `chown www-data:www-data <path-to-volume>`
 
 ## Installation without Docker
 To install on Debian:
