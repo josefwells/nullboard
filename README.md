@@ -23,6 +23,7 @@ To install with Docker-Compose:
  * Edit the docker-compose.yml file to change the published port and set volume mount location
  * Create and run the container <br /> `docker-compose up -d`
  * Set volume permissions <br /> `chown www-data:www-data <path-to-volume>`
+ * Access Nullboard at `http://<IP-ADDRESS:PORT>`
 
 ## Installation without Docker
 To install on Debian:
@@ -30,3 +31,4 @@ To install on Debian:
  * Install Apache with PHP <br /> `sudo apt-get install apache2 php libapache2-mod-php`
  * Copy the app folder into Apache's root directory <br /> `sudo cp -r nullboard/app /var/www/html`
  * Change permissions on Apache's root directory so PHP can write <br /> `sudo chown -R www-data:www-data /var/www/html`
+ * Access Nullboard at `http://<IP-ADDRESS>`
