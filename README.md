@@ -9,9 +9,9 @@ This is a fork of https://github.com/apankrat/nullboard.
 ## Changes
 The major change is that the boards are now stored on the server, rather than the client.
 
-While making this change I also removed the history/undo-redo functionality.
+The backend now uses PHP and SQLite3 to store the boards.
 
-Keeping that functionality with the changes to the file storage would have been very complicated, and I didn't use it in the first place.
+There are also fewer features (including history, undo-redo) that I elected to remove in the process of refactoring.
 
 I also removed the options for changing font size and changing the theme.
 
@@ -28,7 +28,7 @@ To install with Docker-Compose:
 ## Installation without Docker
 To install on Debian:
  * Clone the Repository
- * Install Apache with PHP <br /> `sudo apt-get install apache2 php libapache2-mod-php`
- * Copy the app folder into Apache's root directory <br /> `sudo cp -r nullboard/app /var/www/html`
+ * Install Apache, PHP, and SQLite3 <br /> `sudo apt-get install apache2 php libapache2-mod-php sqlite3 php-sqlite3`
+ * Copy the app folder into Apache's root directory <br /> `sudo cp -r nullboard/app/* /var/www/html`
  * Change permissions on Apache's root directory so PHP can write <br /> `sudo chown -R www-data:www-data /var/www/html`
  * Access Nullboard at `http://<IP-ADDRESS>`

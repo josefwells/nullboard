@@ -7,5 +7,5 @@ services:
      - 20080:80
     ### chown www-data:www-data <path-to-volume>
     #volumes:
-    # - <path-to-volume>:/var/www/html/boards
+    # - <path-to-volume>:/var/www/html/PHP/DB
     container_name: nullboard
