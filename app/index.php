@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
@@ -52,7 +52,7 @@
 
   -->
   <title>Nullboard</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style.css?ts=<?=time()?>">
   <link rel="shortcut icon" type="image/png" href="extras/favicon.ico"/>
 </head>
 <body>
@@ -146,3 +146,4 @@
 <script src="JS/Mechanics.js" type="text/javascript"></script>
 <script src="JS/Main.js" type="text/javascript"></script>
 </html>
+ 
